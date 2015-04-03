@@ -1,0 +1,67 @@
+@font-face{
+	font-family: 'font_head';
+	src: url('../fonts/font_head.ttf');
+}
+@font-face{
+	font-family: 'roboto';
+	src: url('../fonts/Roboto-Light.ttf');
+}
+
+body{
+	background: url('../images/background.jpg');
+	font-family: 'roboto';
+}
+
+h1{
+	font-size: 5em;
+	font-family: font_head, arial, verdana, sans-serif;
+	margin: 20px;
+	color: #eddd34;
+	margin-left: 3em;
+}
+
+#wrapper-main{
+	width: 80vw;
+	height: 40em;
+	
+	background:#cccccc ; 
+	border:1px solid #2b2a2a;
+	margin:0 auto;
+	border-radius: 22px;
+	border-bottom: 4px solid #2b2a2a;
+
+}
+#menu{
+	width: 11em;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	float: left;
+	color: white;
+}
+
+#wrapper-left , #wrapper-right{
+	width: 3em;
+	height: 100%;
+	background: url('img/rubalise.png');
+
+}
+#wrapper-right{
+	float: right;
+	border-radius: 0 20px 20px 0;
+}
+#wrapper-left {
+	float: left;
+	border-radius: 20px 0 0 20px;
+}
+.menu-item{
+	font-size: 1.5em;
+	margin: 10px 0 10px 0;
+	padding: 10px;
+	border-top: 1px solid #EDDD34;
+	border-bottom: 1px solid #EDDD34;
+	background: #434039;
+}
+.menu-item:hover{
+	cursor: pointer;
+	background: #e5e3e3;
+}
