@@ -1,3 +1,4 @@
+/* Chargement des polices */
 @font-face{
 	font-family: 'font_head';
 	src: url('../fonts/font_head.ttf');
@@ -6,7 +7,7 @@
 	font-family: 'roboto';
 	src: url('../fonts/Roboto-Light.ttf');
 }
-
+/*****************************/
 body{
 	background: url('../images/background.jpg');
 	font-family: 'roboto';
@@ -20,17 +21,21 @@ h1{
 	margin-left: 3em;
 }
 
+/****Bloc principal*********/
 #wrapper-main{
-	width: 80vw;
+	width: 1400px;
 	height: 40em;
-	
 	background:#cccccc ; 
 	border:1px solid #2b2a2a;
 	margin:0 auto;
-	border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -o-border-radius: 22px
+    border-radius: 22px;
 	border-bottom: 4px solid #2b2a2a;
-
 }
+
+/*****Le menu************/
 #menu{
 	width: 11em;
 	height: 100%;
@@ -38,30 +43,103 @@ h1{
 	float: left;
 	color: white;
 }
+.menu-item{
+    font-size: 1.5em;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-top: 1px solid #EDDD34;
+    border-bottom: 1px solid #EDDD34;
+    background: #434039;
+}
+.menu-item:hover{
+    cursor: pointer;
+    background: #e5e3e3;
+}
+/******************************************/
 
+/****Conteneur du bloc actu & dernier******/
+#block-main{
+    width: 1150px;
+    height: 30vh;
+    float: left;
+}
+/******************************************/
+/****Les deux bandes jaunes et noires*****/
 #wrapper-left , #wrapper-right{
-	width: 3em;
+	width: 2em;
+    background: url("../images/rubalise.png");
 	height: 100%;
-	background: url('img/rubalise.png');
-
 }
 #wrapper-right{
 	float: right;
+
 	border-radius: 0 20px 20px 0;
 }
 #wrapper-left {
 	float: left;
+
 	border-radius: 20px 0 0 20px;
 }
-.menu-item{
-	font-size: 1.5em;
-	margin: 10px 0 10px 0;
-	padding: 10px;
-	border-top: 1px solid #EDDD34;
-	border-bottom: 1px solid #EDDD34;
-	background: #434039;
+/****************************************/
+
+/***********ACTU**********************/
+
+#actu{
+    width: 1000px;
+    height: 40vh;
+    background: red;
+    margin: 0 auto;
 }
-.menu-item:hover{
-	cursor: pointer;
-	background: #e5e3e3;
+
+/**************************************/
+
+/**********Dernier container**********/
+#last-container{
+    width: 1000px;
+    height: 20vh;
+    background: blue;
+    margin: 0 auto;
+    margin-top: 67px;
 }
+
+/****************************************/
+/*****Media queries********************/
+@media screen and (max-width: 1501px)
+{
+    #wrapper-main{
+        width: 1200px;
+    }
+    #block-main{
+        width: 950px;
+    }
+    #actu,#last-container{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1250px)
+{
+    #wrapper-main{
+        width: 1000px;
+    }
+    #block-main{
+        width: 750px;
+    }
+    #actu,#last-container{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1050px)
+{
+    #wrapper-main{
+        width: 800px;
+    }
+    #block-main{
+        width: 550px;
+    }
+    #actu,#last-container{
+        width: 400px;
+    }
+}
+/*********************************************/
