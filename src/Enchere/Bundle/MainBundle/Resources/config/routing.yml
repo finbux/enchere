@@ -1,3 +1,9 @@
 main_homepage:
-    path:     /
+    path: /
     defaults: { _controller: MainBundle:Default:index }
+enchere_page:
+    path: /enchere
+    defaults: { _controller: MainBundle:Default:enchere }
+top_page:
+    path: /classement
+    defaults: {_controller: MainBundle:Default:top}

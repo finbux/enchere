@@ -10,15 +10,33 @@
 /*****************************/
 body{
 	background: url('../images/background.jpg');
-	font-family: 'roboto';
+	font-family: roboto;
 }
 
-h1{
+/******Titre du site**************/
+#title{
 	font-size: 5em;
 	font-family: font_head, arial, verdana, sans-serif;
 	margin: 20px;
 	color: #eddd34;
 	margin-left: 3em;
+}
+/***********************************/
+h2{
+    font-size: 3em;
+    text-align: center;
+}
+h3{
+    font-size: 1.6em;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.header_title{
+    background:  #3d3d3c;
+    color: #EDDD34;
 }
 
 /****Bloc principal*********/
@@ -39,7 +57,7 @@ h1{
 #menu{
 	width: 11em;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
+	background: #474641;
 	float: left;
 	color: white;
 }
@@ -50,10 +68,15 @@ h1{
     border-top: 1px solid #EDDD34;
     border-bottom: 1px solid #EDDD34;
     background: #434039;
+    text-align: center;
 }
 .menu-item:hover{
     cursor: pointer;
-    background: #e5e3e3;
+    background: #EDDD34;
+    font-weight: bold;
+}
+.menu-item:hover a{
+    color: black;
 }
 /******************************************/
 
@@ -87,8 +110,10 @@ h1{
 #actu{
     width: 1000px;
     height: 40vh;
-    background: red;
+    border-bottom: 2px solid #3D3D3C;
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
 }
 
 /**************************************/
@@ -97,11 +122,16 @@ h1{
 #last-container{
     width: 1000px;
     height: 20vh;
-    background: blue;
+    border-left: 2px solid #3D3D3C;
+    border-right: 2px solid #3D3D3C;
     margin: 0 auto;
     margin-top: 84px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px 0 0;
 }
-
+.radius-top{
+    border-radius: 20px 20px 0 0;
+}
 /****************************************/
 /*****Media queries********************/
 @media screen and (max-width: 1501px)

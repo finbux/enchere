@@ -10,4 +10,14 @@ class DefaultController extends Controller
     {
         return $this->render('MainBundle:Default:index.html.twig');
     }
+
+    public function enchereAction()
+    {
+        return $this->render('MainBundle:Enchere:enchere.html.twig');
+    }
+
+    public function topAction()
+    {
+        return $this->render('MainBundle:Top:classement.html.twig');
+    }
 }
