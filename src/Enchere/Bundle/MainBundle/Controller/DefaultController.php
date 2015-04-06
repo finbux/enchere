@@ -20,4 +20,12 @@ class DefaultController extends Controller
     {
         return $this->render('MainBundle:Top:classement.html.twig');
     }
+
+    public function aproposAction()
+    {
+        return $this->render('MainBundle:Apropos:apropos.html.twig');
+    }
+
+
+
 }

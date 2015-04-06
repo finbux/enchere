@@ -7,3 +7,6 @@ enchere_page:
 top_page:
     path: /classement
     defaults: {_controller: MainBundle:Default:top}
+apropos_page:
+    path: /apropos
+    defaults: {_controller: MainBundle:Default:apropos}
