@@ -12,7 +12,9 @@ body{
 	background: url('../images/background.jpg');
 	font-family: roboto;
 }
-
+a{
+    color: #000000;
+}
 /******Titre du site**************/
 #title{
 	font-size: 5em;
@@ -41,6 +43,7 @@ a{
 
 /****Bloc principal*********/
 #wrapper-main{
+    position: relative;
 	width: 1400px;
 	height: 40em;
 	background:#cccccc ; 
@@ -69,6 +72,7 @@ a{
     border-bottom: 1px solid #EDDD34;
     background: #434039;
     text-align: center;
+    transition: background 0.7s ease;
 }
 .menu-item:hover{
     cursor: pointer;
@@ -79,6 +83,22 @@ a{
     color: black;
 }
 /******************************************/
+
+#register{
+    width: 100%;
+    height: auto;
+    background: #EDDD34;
+    color: black;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+#register a{
+    color: #000000;
+}
+#register a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 /****Conteneur du bloc actu & dernier******/
 #block-main{
@@ -120,6 +140,10 @@ a{
 
 /**********Dernier container**********/
 #last-container{
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    right: 0;
     width: 1000px;
     height: 20vh;
     border-left: 2px solid #3D3D3C;
