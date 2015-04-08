@@ -7,7 +7,16 @@
         </div>
         <div id="last-container">
             <h3 class="header_title radius-top">Les derniers conteneurs ajoutés</h3>
+            <div id="wrapper-last-container">
+                {% for conteneur in conteneurs %}
+                    <div class="item-last-container">
+
+                        <h4 class="header-last">{{ conteneur.name }}</h4>
+                        <img src="{{ asset('bundles/main/images/') }}{{ conteneur.image }}" alt=""/>
+                        <p class="price">{{ conteneur.prix }}</p>
+                        <a class="link-container" href="{{ conteneur.id }}">Participer à l'enchère</a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-
-
 {% endblock %}
