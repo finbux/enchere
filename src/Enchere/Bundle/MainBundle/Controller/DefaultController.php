@@ -12,7 +12,7 @@ class DefaultController extends Controller
         //On initialise le entityManger pour accéder aux entités et la bdd
         $em = $this->getDoctrine()->getManager();
         //Exemple d'insertion de donnée
-        /*$conteneur = new Conteneur();
+       /*$conteneur = new Conteneur();
         $conteneur->setDescription('Un conteneur venant de cuba');
         $conteneur->setName('Conteneur fumant');
         $conteneur->setImage('');
@@ -33,7 +33,7 @@ class DefaultController extends Controller
         //On récupére le repository de l'entité conteneur
         $em = $this->getDoctrine()->getRepository('MainBundle:Conteneur');
         // On récupère les 5 derniers conteneur ajoutés
-        $conteneurs = $em->findBy(array(),array('id' => 'DESC'),3);
+        $conteneurs = $em->findBy(array(),array('id' => 'DESC'),5);
         //On retourne la vue avec en paramètre le tableau des conteneurs
         return $this->render('MainBundle:Default:index.html.twig',array('conteneurs' => $conteneurs));
     }
