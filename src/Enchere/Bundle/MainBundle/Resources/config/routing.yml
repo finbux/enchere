@@ -3,10 +3,10 @@ main_homepage:
     defaults: { _controller: MainBundle:Default:index }
 enchere_page:
     path: /enchere
-    defaults: { _controller: MainBundle:Default:enchere }
+    defaults: { _controller: MainBundle:Enchere:enchere }
 top_page:
     path: /classement
-    defaults: {_controller: MainBundle:Default:top}
+    defaults: {_controller: MainBundle:Top:top}
 apropos_page:
     path: /apropos
-    defaults: {_controller: MainBundle:Default:apropos}
+    defaults: {_controller: MainBundle:Apropos:apropos}
