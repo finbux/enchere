@@ -1,7 +1,7 @@
 /* Chargement des polices */
 @font-face{
 	font-family: 'font_head';
-	src: url('../fonts/font_head.ttf');
+	src: url('../fonts/Iron&Brine.ttf');
 }
 @font-face{
 	font-family: 'roboto';
@@ -12,37 +12,37 @@ body{
 	background: url('../images/background.jpg');
 	font-family: roboto, arial, verdana, sans-serif;;
 }
-a{
-    color: #000000;
-}
-a:hover{
-    text-decoration: underline;
-    font-weight: bold;
-}
+a{  color: #000000;  }
+a:hover{  font-weight: bold;  }
+
 /******Titre du site**************/
 #title{
 	font-size: 5em;
 	font-family: font_head, arial, verdana, sans-serif;
-	margin: 20px;
 	color: #eddd34;
-	margin-left: 3em;
+}
+#entete{
+    width: 70%;
+    margin-left: 150px;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+#entete p{
+    font-style: italic;
+    color: white;
+    margin-left: 10px;
+    font-family: arial;
 }
 /***********************************/
-h2{
-    font-size: 3em;
-    text-align: center;
-}
-h3{
-    font-size: 1.6em;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
+h2{  font-size: 3em;  text-align: center;  }
+h3{  font-size: 1.6em;  text-align: center;  }
+a{  text-decoration: none;  color: #ffffff;  }
+
 .header_title{
+    height: 50px;
     background:  #3d3d3c;
     color: #EDDD34;
+    line-height: 50px;
 }
 
 /****Bloc principal*********/
@@ -81,11 +81,9 @@ a{
 .menu-item:hover{
     cursor: pointer;
     background: #EDDD34;
-    font-weight: bold;
+    font-weight: 500;
 }
-.menu-item:hover a{
-    color: black;
-}
+.menu-item:hover a{  color: black;  }
 /******************************************/
 
 #register{
@@ -96,13 +94,8 @@ a{
     padding: 5px 0 5px 0;
     text-align: center;
 }
-#register a{
-    color: #000000;
-}
-#register a:first-child:after{
-    content: ' | ';
-}
-
+#register a{  color: #000000;  }
+#register a:first-child:after{  content: ' | ';  }
 
 /****Conteneur du bloc actu & dernier******/
 #block-main{
@@ -135,7 +128,7 @@ a{
 
 #actu{
     width: 1000px;
-    height: 400px;
+    height: 50vh;
     border-bottom: 2px solid #3D3D3C;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.5);
@@ -150,8 +143,7 @@ a{
 #last-container{
     position: absolute;
     width: 1000px;
-    min-height: 200px;
-    height: auto;
+    height: 200px;
     border-left: 2px solid #3D3D3C;
     border-right: 2px solid #3D3D3C;
     bottom: 0;
@@ -161,6 +153,7 @@ a{
     -webkit-border-radius: 20px 20px 0 0;
     -ms-border-radius: 20px 20px 0 0;
     border-radius: 20px 20px 0 0;
+
 }
 .radius-top{
     -webkit-border-radius: 20px 20px 0 0;
@@ -169,10 +162,7 @@ a{
 }
 /****************************************/
 /****Affichage des 3 derniers conteneurs****/
-#wrapper-last-container{
-    width: 830px;
-    margin: 0 auto;
-}
+#wrapper-last-container{  width: 830px;  margin: 0 auto;  }
 .item-last-container{
     width: 200px;
     min-height: 150px;
@@ -185,31 +175,77 @@ a{
     -ms-border-radius: 20px 20px 20px 20px;
     border-radius: 20px 20px 20px 20px;
 }
-.item-last-container:last-of-type
-{
-    margin-right: 0;
-}
+.item-last-container:last-of-type { margin-right: 0;  }
 .header-last{
     width: 100%;
     background: #3D3D3C;
     height: 30px;
-    color: white;
+    color: #CCCCCC;
     text-align: center;
     line-height: 30px;
     overflow: hidden;
 }
+.item-last-container a:hover{
+    text-decoration: underline;
+}
+.price{  color: #eddd34;  margin-top: 5px;  }
+.price:after{  content: ' €';  }
 
-.price{
-    color: #eddd34;
-    margin-top: 5px;
-}
-.price:after{
-    content: ' €';
-}
 .link-container{
     display: inline-block;
     margin-top: 5px;
 }
+/******Affichage d'un conteneur****/
+
+#block-conteneur{
+    width: 80%;
+    border: 2px solid #3D3D3C;
+    margin: 0 auto;
+    text-align: center;
+    background: #666666;
+    white-space: nowrap;
+    -webkit-border-radius: 0 0 20px 20px;
+    -o-bordder-radius:  0 0 20px 20px;
+    -ms-border-radius:  0 0 20px 20px;
+    border-radius:  0 0 20px 20px;
+
+}
+#block-conteneur img{
+    margin: 20px;
+}
+
+.description{
+    color: white;
+    font-style: oblique;
+    margin: 20px;
+    overflow: hidden;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+#last-enchere{
+    width: 80%;
+    height:10em;
+    background: #474641;
+    margin: 20px auto;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -o-bordder-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+}
+.price-plus{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.last-time{
+    color: white;
+    margin-top: 20px;
+}
+
+
+/*******************************/
 
 /*******************************/
 /*****Media queries********************/
@@ -227,7 +263,7 @@ a{
     #wrapper-last-container{
         width: 635px;
     }
-    .item-last-container:nth-child(4){display: none}
+    .item-last-container:nth-child(2){display: none}
 }
 
 @media screen and (max-width: 1250px)
@@ -244,19 +280,19 @@ a{
     .item-last-container{
         width: 180px;
     }
-    .item-last-container:nth-child(4){display: none}
-    .item-last-container:nth-child(3){display: none}
+    .item-last-container:nth-child(2){display: none}
+    .item-last-container:nth-child(1){display: none}
 
     #wrapper-last-container{
         width: 380px;
     }
+
 }
 
 @media screen and (max-width: 1050px)
 {
     #wrapper-main{
         width: 800px;
-        height: 122vh;
     }
     #block-main{
         width: 550px;
@@ -264,9 +300,8 @@ a{
     #actu,#last-container{
         width: 400px;
     }
-
-    #wrapper-last-container{
-        width: 200px
+    #actu{
+        width: 400px;
     }
 }
 /*********************************************/

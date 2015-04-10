@@ -10,3 +10,6 @@ top_page:
 apropos_page:
     path: /apropos
     defaults: {_controller: MainBundle:Apropos:apropos}
+conteneur_page:
+    path: /conteneur/{id}
+    defaults: {_controller: MainBundle:Conteneur:view}

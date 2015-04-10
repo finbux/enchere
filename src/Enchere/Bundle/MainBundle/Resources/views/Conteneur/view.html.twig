@@ -1,0 +1,24 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Participer à une enchère{% endblock %}
+
+{% block content %}
+    <div id="block-conteneur">
+
+        <h2 class="header_title">{{ conteneur.name }}</h2>
+        <img src="{{ asset('bundles/main/images/conteneur_bleu_big.png') }}" alt=""/>
+        <hr/>
+        <p class="description">{{ conteneur.description }}</p>
+    </div>
+    <div id="last-enchere"">
+        <h3 class="header-last radius-top">Enchère actuelle </h3>
+        <p class="price price-plus">{{ conteneur.prix }}</p>
+
+        <form action="">
+            <input type="text" name="txt_enchere" Value=""/>
+            <input type="submit" value="Enchérir"/>
+            <p class="last-time">Il reste 10h00:00 avant la fin de l'enchère</p>
+        </form>
+    </div>
+
+{% endblock %}

@@ -19,8 +19,9 @@ class DefaultController extends Controller
         $conteneur->setLastTime('5');
         $conteneur->setPrix('5000');
         $em->persist($conteneur);
+
         $conteneur2 = new Conteneur();
-        $conteneur2->setDescription('Un conteneur abimé');
+        $conteneur2->setDescription('loremdkzk;f;v;ez;coz;oc;zloremdkzk;f;v;ez;coz;oc;zloremdkzk;f;v;ez;coz;oc;zloremdkzk;f;v;ez;coz;oc;zloremdkzk;f;v;ez;coz;oc;z p    dzk;');
         $conteneur2->setName('Conteneur tombé du camion');
         $conteneur2->setImage('');
         $conteneur2->setLastTime('5');
@@ -33,7 +34,7 @@ class DefaultController extends Controller
         //On récupére le repository de l'entité conteneur
         $em = $this->getDoctrine()->getRepository('MainBundle:Conteneur');
         // On récupère les 5 derniers conteneur ajoutés
-        $conteneurs = $em->findBy(array(),array('id' => 'DESC'),5);
+        $conteneurs = $em->findBy(array(),array('id' => 'DESC'),4);
         //On retourne la vue avec en paramètre le tableau des conteneurs
         return $this->render('MainBundle:Default:index.html.twig',array('conteneurs' => $conteneurs));
     }
