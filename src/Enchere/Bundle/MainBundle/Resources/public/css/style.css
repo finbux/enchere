@@ -177,14 +177,18 @@ a{  text-decoration: none;  color: #ffffff;  }
 }
 .item-last-container:last-of-type { margin-right: 0;  }
 .header-last{
+    display: block;
     width: 100%;
     background: #3D3D3C;
     height: 30px;
     color: #CCCCCC;
     text-align: center;
     line-height: 30px;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
+
 .item-last-container a:hover{
     text-decoration: underline;
 }
