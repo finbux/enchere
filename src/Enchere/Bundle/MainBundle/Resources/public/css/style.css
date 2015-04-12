@@ -248,9 +248,19 @@ a{  text-decoration: none;  color: #ffffff;  }
     margin-top: 20px;
 }
 
-
 /*******************************/
 
+#container-user{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #3D3D3C;
+    min-height: 100px;
+    height: auto;
+    background: #666666;
+}
+#container-user form{
+    margin: 20px;
+}
 /*******************************/
 /*****Media queries********************/
 @media screen and (max-width: 1501px)

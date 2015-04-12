@@ -21,8 +21,8 @@
 
         <div id="menu">
             <div id="register">
-               <a href="">Inscription</a>
-                <a href="">Connexion</a>
+               <a href="{{ path('fos_user_registration_register') }}">Inscription</a>
+                <a href="{{ path('fos_user_security_login') }}">Connexion</a>
             </div>
             <ol>
                 <a href="{{ path('main_homepage') }}"><li class="menu-item">Accueil</li></a>
